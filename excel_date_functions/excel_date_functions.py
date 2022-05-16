@@ -139,4 +139,4 @@ def work_dates(data_inicial, data_final, rolagem = None) -> np.ndarray:
     # Matriz de resposta será um np.ndarray flat de todas as listas criadas
     matriz_resposta = np.array(matriz_resposta, dtype = 'object').flatten()
     
-    return matriz_resposta
+    return matriz_resposta.astype('datetime64[D]')
